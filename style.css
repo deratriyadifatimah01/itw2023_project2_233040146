@@ -1,0 +1,259 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+}
+
+.main-color {
+    background-color: cadetblue !important;
+}
+
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(img/about.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+span {
+    color: #aad7d9;
+}
+
+/* about section */
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: #aad7d9;
+}
+
+#about .container {
+    padding-top: 70px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.heading span {
+    color: cadetblue;
+}
+
+#about .card img{
+    border-radius: 20px;
+}
+
+#about-btn {
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid cadetblue;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+@media screen and (max-width:982px) {
+    #about p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #about p {
+        font-size: 15px;
+    }
+    #about {
+        height: 120vh;
+    }
+}
+
+/* product */
+#product {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.heading3 {
+    text-align: center;
+    font-size: 50px;
+    color: cadetblue;
+    font-weight: bold;
+}
+
+#container2 {
+    margin-top: 20px;
+}
+
+#product .card {
+    box-shadow: rgb(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#product h3 {
+    text-align: center;
+    color: cadetblue;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#product p {
+    font-size: 16px;
+    color: cadetblue;
+    padding-top: 10px;
+}
+
+#product p span {
+    float: right;
+    cursor: pointer;
+}
+
+/* Gallery */
+#gallery {
+    background-color: #add;
+}
+
+#gallery p {
+    font-size: 16px;
+    color: cadetblue;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+
+.contact-text h2 {
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+
+.contact-text h2 span {
+    color: #aad7d9;
+}
+
+.container-text h4 {
+    margin: 15px;
+    color: blue;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text p {
+    color: #aad7d9;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.contact-list {
+    margin-bottom: 3rem;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-list i{
+    display: inline-block;
+    color: #aad7d9;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+
+.contact-list li a:hover {
+    transform: scale3d(1.01) translateY(-5px);
+    color: #aad7d9;
+}
+
+.contact-icons i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #aad7d9;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #aad7d9;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5 ease;
+    animation: slidLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--1));
+        margin: 30px 15px 30px 0;
+}
+    
+.contact-icons i:hover {
+    background: lightblue;
+    color: white;
+    box-shadow: 0 0 20px lightblue;
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input, form textarea {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: gainsboro;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500px;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form form .send {
+    display: inline-block;
+    padding: 12px 50px;
+    background: lightblue;
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px lightblue, 0 0 25px lightblue;
+}
+
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px lightblue, 0 0 25px lightblue, 0 0 50px lightblue, 0 0 100px lightblue, 0 0 200px lightblue;
+}
